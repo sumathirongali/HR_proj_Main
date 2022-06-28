@@ -113,7 +113,7 @@ public class EmpEducation extends HttpServlet {
 			// TODO Auto-generated catch block
 			ex.printStackTrace();
 		}
-		request.setAttribute("emp_ID", EmpID);
+		/* request.setAttribute("emp_ID", EmpID); */
 		request.setAttribute("EmpEduDetails", objEmpEducation);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("empEducation.jsp");
 		dispatcher.forward(request, response);
