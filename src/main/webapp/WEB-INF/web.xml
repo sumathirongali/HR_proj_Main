@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>HR_proj</display-name>
+	<welcome-file-list>
+		<welcome-file>dbConnection.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+
+
+	</welcome-file-list>
+
+
+	<display-name>ListEmployees</display-name>
+	
+	<servlet>
+		<servlet-name>ListEmployees</servlet-name>
+		<servlet-class>hr_package.ListEmployees</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListEmployees</servlet-name>
+		<url-pattern>/getEmployeeList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListAdminContract</servlet-name>
+		<servlet-class>hr_package.ListAdminContracts</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListAdminContract</servlet-name>
+		<url-pattern>/getAdminContractList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EmpAddress</servlet-name>
+		<servlet-class>hr_package.EmpAddress</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmpAddress</servlet-name>
+		<url-pattern>/editEmployeeAddress</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EmpJobTitle</servlet-name>
+		<servlet-class>hr_package.EmpJobTitle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmpJobTitle</servlet-name>
+		<url-pattern>/editEmployeeJobTitle</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EmpEducation</servlet-name>
+		<servlet-class>hr_package.EmpEducation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmpEducation</servlet-name>
+		<url-pattern>/editEmpEducation</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EmpInsurance</servlet-name>
+		<servlet-class>hr_package.EmpInsurance</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmpInsurance</servlet-name>
+		<url-pattern>/editEmpInsurance</url-pattern>
+	</servlet-mapping>
+</web-app>
